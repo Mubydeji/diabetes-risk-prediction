@@ -112,9 +112,9 @@ Focus clinical attention on the top three risk factors: number of pregnancies, f
 
 ## Limitations
 
-1. Dataset limited to female patients of Pima Indian heritage aged 21+ , generalisation requires validation on broader populations
+1. Dataset limited to female patients of Pima Indian heritage aged 21+, generalisation requires validation on broader populations
 2. Cross-sectional data predicts current diabetes status, not future onset
-3. Class imbalance handled via threshold optimisation , future work should explore SMOTE and cost-sensitive learning
+3. Class imbalance handled via threshold optimisation, future work should explore SMOTE and cost-sensitive learning
 
 ---
 
