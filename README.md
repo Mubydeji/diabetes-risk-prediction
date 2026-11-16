@@ -1,5 +1,5 @@
 # Diabetes Risk Prediction: End-to-End ML Pipeline
-### From Raw Clinical Data to a Deployed Prediction Model
+### From raw clinical data to a prediction model with a live app
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange)
@@ -8,9 +8,15 @@
 
 ---
 
+## Live app
+
+[diabetesriskapp.streamlit.app](https://diabetesriskapp.streamlit.app) (Streamlit, built from `app.py` in this repo)
+
+---
+
 ## Overview
 
-This project builds a complete machine learning pipeline to predict diabetes risk in patients based on clinical measurements. It simulates a real-world clinical decision support tool — flagging high-risk patients for priority follow-up before diabetes develops.
+This project builds a complete machine learning pipeline to predict diabetes risk in patients based on clinical measurements. It works like a clinical decision support tool: it flags high-risk patients for priority follow-up.
 
 The pipeline covers every stage: data cleaning, feature engineering, model training and comparison, evaluation, threshold optimisation, and a structured clinical recommendation.
 
@@ -18,7 +24,7 @@ The pipeline covers every stage: data cleaning, feature engineering, model train
 
 ## Clinical Question
 
-> *Given a patient's clinical measurements, can we accurately predict whether they are at risk of diabetes — and which factors drive that risk?*
+> *Given a patient's clinical measurements, can we predict whether they are at risk of diabetes, and which factors drive that risk?*
 
 ---
 
@@ -32,13 +38,15 @@ The pipeline covers every stage: data cleaning, feature engineering, model train
 
 ---
 
-## Project Structure
+## Project structure
+
+```
 diabetes-risk-prediction/
-│
-├── notebooks/
-│   └── diabetes_risk_prediction.ipynb
-├── README.md
-└── requirements.txt
+├── diabetes-risk-prediction.ipynb   # cleaning, features, models, threshold
+├── app.py                           # Streamlit app
+├── requirements.txt
+└── README.md
+```
 
 ---
 
@@ -104,9 +112,9 @@ Focus clinical attention on the top three risk factors: number of pregnancies, f
 
 ## Limitations
 
-1. Dataset limited to female patients of Pima Indian heritage aged 21+ — generalisation requires validation on broader populations
+1. Dataset limited to female patients of Pima Indian heritage aged 21+ , generalisation requires validation on broader populations
 2. Cross-sectional data predicts current diabetes status, not future onset
-3. Class imbalance handled via threshold optimisation — future work should explore SMOTE and cost-sensitive learning
+3. Class imbalance handled via threshold optimisation , future work should explore SMOTE and cost-sensitive learning
 
 ---
 
@@ -133,4 +141,4 @@ Data Analyst | Python · SQL · R · Power BI
 
 ## License
 
-MIT License — free to use, adapt, and build on with attribution.
+MIT License Free to use, adapt and build on with attribution.
